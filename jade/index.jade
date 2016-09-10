@@ -1,0 +1,60 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title sweeperMines online
+		meta(name="keywords" content="sweeperMines javascript")
+		meta(name="keywords" content="扫雷，在线扫雷，javascript在线扫雷")
+		link(rel="stylesheet" type="text/css" href="../css/layout.css")
+	body(onkeydown="keydown(event)")
+		.article#article
+			.p-header
+				.p-header-info1.gradient.clear-float
+					.p-header1-l
+						span.header-mine-icon
+						span.header-text 扫雷Online
+					.p-header1-r
+						button.close-window
+						button.big-window
+						button.small-window
+				.p-header-info2
+					.btn-style#game-btn-container
+						.game-btn
+							button(id="game" class= "dropbtn" onclick="showList(this)") 游戏 (G)
+						.btn-content#game-menu
+							button.game-item#start-game(onclick="setCellContainer()")
+								span &nbsp;开局&nbsp;&nbsp;&nbsp;&nbsp;F2
+							button.game-item#primary-game(onclick="setCellContainer()")
+								span.level-noselected *
+								span &nbsp;初级
+							button.game-item#middle-game(onclick="setCellContainer(setLevel.middle)")
+								span.level-noselected *
+								span &nbsp;中级 
+							button.game-item#advanced-game(onclick="setCellContainer(setLevel.advanced)")
+								span.level-noselected *
+								span &nbsp;高级
+							button.game-item#expert-game(onclick="setCellContainer(setLevel.expert)") 
+								span.level-noselected *
+								span &nbsp;专家	
+					.btn-style#help-btn-container
+						.help-btn
+							button(id="help" class="dropbtn" onclick="showList(this)") 帮助 (H)
+						.btn-content#help-menu
+							button.game-item#about-game(onclick="aboutGame()")
+								span &nbsp;关于&nbsp;&nbsp;F1		
+			.main#main
+				.main-header#main-header.clear-float
+					.minues-num
+						span.hundreds#hundreds
+						span.decades#decades
+						span.units#units
+					.status-game
+						button.restart-game#restart-game(onclick="reset()")
+					.countdown
+						span.hundreds-time#hundredsTime
+						span.decade-time#decadeTime
+						span.units-time#unitsTime
+				.cell-container#cell-container.clear-float
+		script(type="text/javascript" src="../js/util.js")
+
+						

@@ -1,0 +1,257 @@
+html,
+body,
+div,
+dt,
+dd,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+a,
+p,
+ul,
+ol,
+li,
+menu,
+button,
+span {
+  font-family: 'Helvetical Neue', Helvetical, Arial, sans-self;
+  margin: 0;
+  padding: 0; }
+
+ul,
+ol,
+li {
+  list-style: none;
+  display: block; }
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff; }
+
+img {
+  display: block;
+  border: none; }
+
+.clear-float {
+  zoom: 1; }
+
+.clear-float:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: ''; }
+
+.article {
+  font-size: 14px;
+  margin: 100px auto;
+  background-color: #d4d0c8;
+  box-shadow: 1px 1px 1px; }
+
+.gradient {
+  background: #000;
+  background: -moz-linear-gradient(left, #374482 0%, #b1cbdd 100%);
+  background: -webkit-gradient(linear, left top, left top, color-stop(0%, #374482), color-stop(100%, #b1cbdd));
+  background: -webkit-linear-gradient(left, #374482 0%, #b1cbdd 100%);
+  background: -o-linear-gradient(left, #374482 0%, #b1cbdd 100%);
+  background: -ms-linear-gradient(left, #374482 0%, #b1cbdd 100%);
+  background: linear-gradient(to right, #374482 0%, #b1cbdd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#374482', endColorstr='#B1CBDD',GradientType=0 ); }
+
+.p-header {
+  position: relative;
+  z-index: 1; }
+
+.p-header-info1 {
+  height: 19px; }
+
+.p-header1-l {
+  float: left;
+  color: #fff; }
+  .p-header1-l .header-mine-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-left: 3px;
+    vertical-align: middle;
+    background-image: url(../images/mine.gif); }
+
+.p-header1-r {
+  float: right;
+  width: 60px;
+  height: 16px;
+  padding-top: 1px; }
+  .p-header1-r .small-window {
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    background-image: url(../images/header-btn.jpg);
+    background-position: -1px 0;
+    box-shadow: 1px 1px 1px; }
+  .p-header1-r .big-window {
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    border: none;
+    background-image: url(../images/header-btn.jpg);
+    background-position: 17px 2px;
+    box-shadow: 1px 1px 1px; }
+  .p-header1-r .close-window {
+    display: block;
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-right: 1px;
+    vertical-align: middle;
+    background-image: url(../images/header-btn.jpg);
+    background-position: 31px 0;
+    box-shadow: 1px 1px 1px; }
+
+.p-header-info2 {
+  position: relative;
+  padding: 4px; }
+
+.btn-style {
+  position: relative;
+  width: 80px; }
+
+.game-btn button {
+  border: none;
+  background-color: #d4d0c8; }
+  .game-btn button:hover {
+    box-shadow: 1px 1px 1px, -1px -1px 1px; }
+
+#help-btn-container {
+  position: absolute;
+  top: 4px;
+  left: 75px; }
+  #help-btn-container .help-btn button {
+    border: none;
+    background-color: #d4d0c8; }
+    #help-btn-container .help-btn button:hover {
+      box-shadow: 1px 1px 1px, -1px -1px 1px; }
+
+.btn-content {
+  position: absolute;
+  top: 22px;
+  display: none; }
+
+.show {
+  display: block; }
+
+.game-item {
+  display: block;
+  width: 120px;
+  border: none;
+  box-shadow: 1px 1px 1px;
+  background-color: #d4d0c8; }
+  .game-item:hover {
+    background-color: #33407f; }
+  .game-item .level-noselected {
+    visibility: hidden; }
+
+.main {
+  position: relative;
+  z-index: 0;
+  margin: 2px 4px;
+  background-color: #ccc;
+  box-shadow: 1px 1px 1px #eee, -1px -1px 2px #666; }
+
+.main-header {
+  position: relative;
+  height: 30px;
+  margin: 0 auto;
+  padding-top: 3px;
+  box-shadow: 1px 1px 1px #eee, -1px -1px 2px #666; }
+
+.minues-num {
+  float: left;
+  width: 40px;
+  height: 24px;
+  margin-left: 10px;
+  box-shadow: 1px 1px 1px #808080, -1px -1px 2px #fff; }
+  .minues-num .hundreds {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 24px;
+    background-image: url(../images/num.bmp); }
+  .minues-num .decades {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 24px;
+    background-image: url(../images/num.bmp); }
+  .minues-num .units {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 24px;
+    background-image: url(../images/num.bmp); }
+
+.status-game {
+  position: absolute;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  margin-left: -12px; }
+  .status-game .restart-game {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/smileicon.bmp); }
+
+.countdown {
+  float: right;
+  width: 40px;
+  height: 24px;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px #808080, -1px -1px 2px #fff; }
+  .countdown .hundreds-time {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 24px;
+    background-image: url(../images/num.bmp);
+    background-position: 0 24px; }
+  .countdown .decade-time {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 24px;
+    background-image: url(../images/num.bmp);
+    background-position: 0 24px; }
+  .countdown .units-time {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 24px;
+    background-image: url(../images/num.bmp);
+    background-position: 0 24px; }
+
+.cell-container {
+  margin: 2px auto;
+  box-shadow: -1px -1px 1px #666, 1px 1px 1px #fff; }
+
+.cell-container .cell {
+  border-width: 1px;
+  display: block;
+  float: left;
+  width: 17px;
+  height: 17px;
+  background-image: url(../images/mineicon.bmp);
+  background-position: -1px 0px;
+  outline: none; }
+
+/*# sourceMappingURL=layout.css.map */

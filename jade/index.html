@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>sweeperMines online</title>
+    <meta name="keywords" content="sweeperMines javascript">
+    <meta name="keywords" content="扫雷，在线扫雷，javascript在线扫雷">
+    <link rel="stylesheet" type="text/css" href="../css/layout.css">
+  </head>
+  <body onkeydown="keydown(event)">
+    <div id="article" class="article">
+      <div class="p-header">
+        <div class="p-header-info1 gradient clear-float">
+          <div class="p-header1-l"><span class="header-mine-icon"></span><span class="header-text">扫雷Online</span></div>
+          <div class="p-header1-r">
+            <button class="close-window"></button>
+            <button class="big-window"></button>
+            <button class="small-window"></button>
+          </div>
+        </div>
+        <div class="p-header-info2">
+          <div id="game-btn-container" class="btn-style">
+            <div class="game-btn">
+              <button id="game" onclick="showList(this)" class="dropbtn">游戏 (G)</button>
+            </div>
+            <div id="game-menu" class="btn-content">
+              <button id="start-game" onclick="setCellContainer()" class="game-item"><span>&nbsp;开局&nbsp;&nbsp;&nbsp;&nbsp;F2</span></button>
+              <button id="primary-game" onclick="setCellContainer()" class="game-item"><span class="level-noselected">*</span><span>&nbsp;初级</span></button>
+              <button id="middle-game" onclick="setCellContainer(setLevel.middle)" class="game-item"><span class="level-noselected">*</span><span>&nbsp;中级 </span></button>
+              <button id="advanced-game" onclick="setCellContainer(setLevel.advanced)" class="game-item"><span class="level-noselected">*</span><span>&nbsp;高级</span></button>
+              <button id="expert-game" onclick="setCellContainer(setLevel.expert)" class="game-item"> <span class="level-noselected">*</span><span>&nbsp;专家	</span></button>
+            </div>
+          </div>
+          <div id="help-btn-container" class="btn-style">
+            <div class="help-btn">
+              <button id="help" onclick="showList(this)" class="dropbtn">帮助 (H)</button>
+            </div>
+            <div id="help-menu" class="btn-content">
+              <button id="about-game" onclick="aboutGame()" class="game-item"><span>&nbsp;关于&nbsp;&nbsp;F1		</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="main" class="main">
+        <div id="main-header" class="main-header clear-float">
+          <div class="minues-num"><span id="hundreds" class="hundreds"></span><span id="decades" class="decades"></span><span id="units" class="units"></span></div>
+          <div class="status-game">
+            <button id="restart-game" onclick="reset()" class="restart-game"></button>
+          </div>
+          <div class="countdown"><span id="hundredsTime" class="hundreds-time"></span><span id="decadeTime" class="decade-time"></span><span id="unitsTime" class="units-time"></span></div>
+        </div>
+        <div id="cell-container" class="cell-container clear-float"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../js/util.js"></script>
+  </body>
+</html>

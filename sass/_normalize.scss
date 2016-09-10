@@ -1,0 +1,68 @@
+html,
+body,
+div,
+dt,
+dd,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+a,
+p,
+ul,
+ol,
+li,
+menu,
+button,
+span
+{
+    font-family: 'Helvetical Neue', Helvetical, Arial, sans-self;
+
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li
+{
+    list-style: none;
+    display: block;
+}
+
+a
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+img
+{
+    display: block;
+
+    border: none;
+}
+
+.clear-float
+{
+    zoom: 1;
+}
+
+.clear-float:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '';
+}
